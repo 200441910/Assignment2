@@ -9,25 +9,29 @@ var imageList = [
 	{
 		'src' : 'images/flowers-pink-small.jpg',
 		
-		'description' : 'Pink flower',
+		'title' : 'Pink flower',
+		'description': 'Pink flowers are used as a symbol of love and awareness.',
 		
 	},
 	{
 		'src' : 'images/flowers-purple-small.jpg',
-		'description' : 'purple flower',
-		
+		'title' : 'purple flower',
+		'description':'Purple is a common choice of flower due to its variety of hues and calming effect on a space.'
 	},
 	{
 		'src' : 'images/flowers-red-small.jpg',
-		'description' : 'Red flower',
+		'title' : 'Red flower',
+		'description': 'The red flower is a symbol of remembrance and a lively imagination. ',
 	},
 	{
 		'src' : 'images/flowers-white-small.jpg',
-		'description' : 'White flower',
+		'title' : 'White flower',
+		'description': 'White orchids symbolize beauty, innocence, and elegance',
 	},
 	{
 		'src' : 'images/flowers-yellow-small.jpg',
-		'description' : 'Yellow flower',
+		'title' : 'Yellow flower',
+		'description': 'Yellow flowers bring some sunshine to a landscape, even on a cloudy day.',
 	}
 ];
 
@@ -37,7 +41,8 @@ for(var i = 0; i < imageList.length; i++) {
 	var newImage = document.createElement('img');
 	newImage.setAttribute('src', imageList[i].src);
 
-	newImage.setAttribute('title', imageList[i].description);
+	newImage.setAttribute('title', imageList[i].title);
+	newImage.setAttribute('alt', imageList[i].description);
 
 	newImage.index = i;
 	newImage.className = 'thumbnail';
