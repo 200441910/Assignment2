@@ -1,0 +1,49 @@
+
+body {
+  font-family: arial;
+  text-transform: uppercase;
+  text-align: :center;
+  background: #fefee5;
+  padding-block: ;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+h3{
+	text-align: center;
+}
+
+
+body > h1:nth-child(1) {
+  text-align: center;
+}
+
+
+
+
+li img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	outline-width: 0;
+	z-index: 0;
+	height: 160px;
+	width: 240px;
+}
+
+li {
+	display: inline;
+}
+.active {
+	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+	filter: none;
+	box-shadow:0 0 20px rgba(216, 21, 21, 0.7);
+	z-index: 10;
+	position: relative;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	transition-duration: 1s;
+}
+
+
+
+
